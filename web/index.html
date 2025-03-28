@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Pure Delhi - Air Quality Monitoring</title>
+        <link rel="stylesheet" href="style/general.css" />
+        <link rel="stylesheet" href="style/header.css" />
+        <link rel="stylesheet" href="style/main.css" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <header>
+            <nav class="navbar section-content">
+                <a href="" class="nav-logo">
+                    <img
+                        src="icons/PureDelhi.png"
+                        alt="Logo"
+                        class="nav-logo-img"
+                    />
+                </a>
+                <ul class="nav-menu">
+                    <li class="nav-item" id="selected-nav-link">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html">History</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html">API</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="first-section">
+                <div class="section-content">
+                    <div class="details-card">
+                        <div class="first-card-content">
+                            <div class="search-box">
+                                <input
+                                    type="text"
+                                    placeholder="Location"
+                                    class="search-bar"
+                                />
+                                <button class="search-btn">
+                                    <img src="icons/search.png" alt="" />
+                                </button>
+                            </div>
+                            <div class="time">
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="second-card-content">
+                            <h6 class="current-location"></h6>
+                            <h1 class="current-aqi">AQI 60</h1>
+                            <h6 class="current-condition">Good</h6>
+                        </div>
+                        <div class="third-card-content">
+                            <canvas id="myChart"></canvas>
+                        </div>
+                    </div>
+                    <div class="animation-wrapper">
+                        <img
+                            src="icons/happy.webp"
+                            alt="animation"
+                            class="animation"
+                        />
+                    </div>
+                </div>
+            </section>
+        </main>
+        <script src="scripts/graph.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="scripts/main.js"></script>
+    </body>
+</html>
